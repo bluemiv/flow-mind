@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 export default function FeaturesSection() {
   return (
-    <section className="h-[500px] grid grid-cols-1 md:grid-cols-3 text-center">
+    <section className="min-h-[600px] grid grid-cols-1 lg:grid-cols-3 gap-lg text-center py-xl">
       {[
         {
           img: '/r/i/node.webp',
@@ -34,7 +34,7 @@ interface TFeatureSectionItemProps {
 
 function FeatureSectionItem({ img, title, desc }: TFeatureSectionItemProps) {
   return (
-    <div className="p-lg flex flex-col gap-lg items-center justify-center md:transition md:ease-in-out md:duration-200 md:hover:scale-110">
+    <div className="p-lg flex flex-col gap-lg items-center justify-center">
       <img className="w-[100px] h-[100px] md:w-[150px] md:h-[150px]" src={img} alt={title} />
       <h2 className="text-lg md:text-2xl font-semibold">{title}</h2>
       <p className="md:text-lg">{desc}</p>

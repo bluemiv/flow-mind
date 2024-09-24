@@ -17,6 +17,19 @@ export default {
       margin: spacing,
       padding: spacing,
       gap: spacing,
+      keyframes: {
+        gradient: {
+          '0%, 100%': {
+            'background-position': '0% 50%',
+          },
+          '50%': {
+            'background-position': '100% 50%',
+          },
+        },
+      },
+      animation: {
+        'gradient-bg': 'gradient 5s ease infinite',
+      },
     },
   },
   plugins: [],
