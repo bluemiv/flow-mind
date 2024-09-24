@@ -1,3 +1,10 @@
+import { FeaturesSection, WelcomeSection } from '@/features/main/components';
+
 export default function RootPage() {
-  return <div>root</div>;
+  return (
+    <main>
+      <WelcomeSection />
+      <FeaturesSection />
+    </main>
+  );
 }

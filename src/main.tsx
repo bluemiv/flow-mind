@@ -6,11 +6,14 @@ import { RouterProvider } from 'react-router-dom';
 import { StyleProvider } from '@ant-design/cssinjs';
 
 import { router } from 'src/router';
+import { ConfigProvider } from 'antd';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <StyleProvider hashPriority="high">
-      <RouterProvider router={router} />
-    </StyleProvider>
+    <ConfigProvider theme={{ token: { colorPrimary: '#4F46E5' } }}>
+      <StyleProvider hashPriority="high">
+        <RouterProvider router={router} />
+      </StyleProvider>
+    </ConfigProvider>
   </StrictMode>,
 );
