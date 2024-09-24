@@ -5,17 +5,17 @@ export default function FeaturesSection() {
     <section className="h-[500px] grid grid-cols-1 md:grid-cols-3 text-center">
       {[
         {
-          img: '/r/i/node.png',
+          img: '/r/i/node.webp',
           title: '아이디어 노드 생성',
           desc: '아이디어 노드를 생성하고 수정하여 메모를 손쉽게 구성해보세요.',
         },
         {
-          img: '/r/i/connect.png',
+          img: '/r/i/connect.webp',
           title: '아이디어 시각화',
           desc: '생성한 아이디어 노드들을 선으로 연결하여, 아이디어에 관계를 지어보세요.',
         },
         {
-          img: '/r/i/easy-memo.png',
+          img: '/r/i/easy-memo.webp',
           title: '손 쉽게 정리',
           desc: '노드를 드래그 앤 드롭하여 쉽게 정리헤보세요.',
         },
